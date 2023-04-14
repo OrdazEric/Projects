@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+    <main id="main">
+        <header id="header">
+            <div class="logo">
+            <img id="header-img" src="https://seeklogo.com/images/D/dye-precision-logo-04E3429345-seeklogo.com.png" alt="logo"/>
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                <li><a class="nav-link" href="#products">Products</a></li>
+                <li><a class="nav-link" href="#deals">Deals</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <section id="paintball-video">
+                <iframe
+                id="video"
+                height="500"
+                src="https://www.youtube.com/embed/watch?v=IrbcZCd_foc"
+                frameborder="0"
+                allowfullscreen
+                ></iframe>
+            </section>
+            <section id="products">
+                <div class="grid">
+                <div class="icon"><i class="materials"></i></div>
+                <div class="desc">
+                    <h2>Premium Materials</h2>
+                    <p>
+                    The best markers with the bests materials
+                    </p>
+                </div>
+                </div>
+                <div class="grid">
+                <div class="icon"><i class="materials"></i></div>
+                <div class="desc">
+                    <h2>Fast Shipping</h2>
+                    <p>
+                    We make sure you receive your markers as soon as we have finished
+                    making it.
+                    </p>
+                </div>
+                </div>
+                <div class="grid">
+                <div class="icon">
+                    <i class="materials" aria-hidden="true"></i>
+                </div>
+                <div class="desc">
+                    <h2>Quality Assurance</h2>
+                    <p>
+                    For every purchase you make, we will ensure there are no damages or
+                    faults.
+                    </p>
+                </div>
+                </div>
+            </section>
+            <section id="deals">
+            <div class="product" id="low">
+                <div class="level">Assault</div>
+                <h2>$600</h2>
+                <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+                </div>
+                <div class="product" id="medium">
+                <div class="level">DSR</div>
+                <h2>$900</h2>
+                <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+                </div>
+                <div class="product" id="high">
+                <div class="level">M3+</div>
+                <h2>$1200</h2>
+                <ol>
+                    <li>Plays similar to a Trumpet</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+                </div>
+            </section>
+        </div>
+            <section id="contact">
+            <h2>Enter your Email for contact</h2>
+            <form id="form" action=" https://www.freecodecamp.com/email-submit">
+            <input 
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="Please enter your Email"
+                    required/>
+            <input id="submit" type="submit" value="Send news" class="btn"/>
+            </form>
+            </section>
+    </main>
+</html>
