@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+<main id="main">
+        div id="container">
+        <h1 id="title" class="text-center">Reservation Form</h1>
+        <p id="description" class="text-center">Thank you for taking the time to help us improve our efficiency</p>
+        <form id="survey-form">
+        <div id="form-in">
+            <label id="name-label" for="name">Name</label>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+                >       
+        </div>
+        <div id="form-in">
+            <label id="email-label" for="email">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+                >       
+        </div>
+        <div id="form-in">
+            <label id="number-label" for="number">Number of Guests</label>
+            <input
+                type="number"
+                name="guests"
+                id="number"
+                class="form-control"
+                min="2"
+                max="12"
+                placeholder="# of guests"
+                required
+                >       
+        </div>
+        <div id="form-in">
+            <p>what is the reservation time?</p>
+            <select id="dropdown" name="time" class="form-control" required>
+                <option disabled selected value>Select a time</option>
+                <option value="1_hour">13:00 hrs</option>
+                <option value="2_hour">14:00 hrs</option>
+                <option value="3_hour">15:00 hrs</option>
+                <option value="4_hour">16:00 hrs</option>
+                <option value="5_hour">17:00 hrs</option>
+            </select>    
+        </div>
+        <div id="form-in">
+            <p>do you want a non-smoker area?<p>
+            <label>
+                <input
+                    name="non-smoker"
+                    value="yes"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                    >Yes</label>
+            <label>
+                <input
+                    name="non-smoker"
+                    value="no"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                    >No</label>
+        </div>
+        <div class="form-in">
+            <p>What do like about us?
+                <span class="clue">(Check all that apply)</span></p>
+            <label>
+                <input
+                name="prefer"
+                value="attention"
+                type="checkbox"
+                class="input-checkbox"
+                >Excellent attention</label>
+            <label>
+                <input
+                name="prefer"
+                value="speed"
+                type="checkbox"
+                class="input-checkbox"
+                >Speed in service</label
+            >
+            <label>
+                <input
+                name="prefer"
+                value="clean"
+                type="checkbox"
+                class="input-checkbox"
+                >All is always clean</label >
+            <label>
+                <input
+                name="prefer"
+                value="bar"
+                type="checkbox"
+                class="input-checkbox"
+                >Coctels and beer</label>
+            <label>
+                <input
+                name="prefer"
+                value="menu"
+                type="checkbox"
+                class="input-checkbox"
+                >Menu and desserts</label>
+            <label>
+                <input
+                name="prefer"
+                value="prices"
+                type="checkbox"
+                class="input-checkbox"
+                >The prices</label>
+            </div>
+        <div class="form-in">
+            <p>Any comments or suggestions?</p>
+            <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."
+            ></textarea>
+            </div>
+
+            <div class="form-in">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+            </div>
+        </form>
+        </div>
+    </main>
+</html>
